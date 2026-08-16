@@ -56,7 +56,7 @@ function _run_rider {
         return
     }
 
-    $srcPath = Resolve-Path "$env:PROJECT_NAME_SRC_DIR/src"
+    $srcPath = Resolve-Path "$env:PROJECT_NAME_SRC_DIR"
     if (-not $srcPath) {
         Write-Error "PROJECT_NAME_SRC_DIR environment variable not set. Make sure to run the activate script first."
         return
