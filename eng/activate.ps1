@@ -2,7 +2,8 @@ $scriptsDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $scriptFiles = @(
     "$scriptsDir/powershell/env.ps1",
     "$scriptsDir/powershell/locations.ps1",
-    "$scriptsDir/powershell/run.ps1"
+    "$scriptsDir/powershell/run.ps1",
+    "$scriptsDir/powershell/git.ps1"
 )
 
 foreach ($script in $scriptFiles) {
